@@ -8,6 +8,7 @@ if " " not in expression:
     if "," not in expression:
         table_data = []
         operators = {"^": " and ", "v": " or ", "-": " not ", "x": "!=", "|": "==", "/": "<="}
+        
         # "^" and
         # "v" or
         # "-" not

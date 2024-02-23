@@ -1,5 +1,5 @@
 from customtkinter import *    # Importar todas las funciones de customtkinter
-from CTkTable import CTkTable
+from CTkTable import CTkTable  # Importar para crear tablas en CustomTkinter
 from itertools import product  # Importar la función product de itertools
 from tabulate import tabulate  # Importar la función tabulate de tabulate
 
