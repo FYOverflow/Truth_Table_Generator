@@ -18,7 +18,7 @@ if " " not in expression:
 
         # Separar del input las variables y la expresion
         variables = sorted({i for i in expression if i.isalpha() and i != "v" and i != "x"})
-        print(variables)
+
         # Reemplazar el símbolo a letras
         expression2 = expression
 
