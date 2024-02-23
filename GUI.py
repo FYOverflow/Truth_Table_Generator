@@ -26,7 +26,7 @@ def generate_table():
 
                 # Separar del input las variables y la expresion
                 variables = sorted({i for i in expression if i.isalpha() and i != "v" and i != "x"})
-
+                print(variables)
                 # Reemplazar el símbolo a letras
                 expression2 = expression
 
@@ -43,7 +43,7 @@ def generate_table():
                 # Agregando primero las variables y luego la expresión a los encabezados de la tabla
                 headers = list(variables) + [expression]
 
-                output.set(tabulate(table_data, headers=headers, tablefmt="double_grid"))
+                output.insert(tabulate(table_data, headers=headers, tablefmt="double_grid"))
 
             elif "," in expression:  # Si hay una coma en la expresión (dos expresiones separadas por coma)
                 expression = expression.split(",")  # Dividir las dos expresiones
