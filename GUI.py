@@ -11,7 +11,7 @@ app = CTk()
 
 def verificar_entrada(entrada): 
     # Función que verifica si una entrada es un número o una letra, y devuelve True o False.
-    return bool(re.match("^[a-z^\-/|,]+$", entrada))
+    return bool(re.match("^[a-z^\/\|\(\)]+$", entrada))
 
 def generate_table():
     global output
